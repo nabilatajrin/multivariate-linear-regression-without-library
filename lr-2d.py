@@ -4,7 +4,7 @@
 # https://deeplearningcourses.com/c/data-science-linear-regression-in-python
 # https://www.udemy.com/data-science-linear-regression-in-python
 
-from __future__ import print_function, division
+# from __future__ import print_function, division
 from builtins import range
 # Note: you may need to update your version of future
 # sudo pip install -U future
@@ -45,16 +45,21 @@ w = np.linalg.solve(np.dot(X.T, X), np.dot(X.T, Y))
 Yhat = np.dot(X, w)
 
 
-# determine how good the model is by computing the r-squared
-d1 = Y - Yhat
-d2 = Y - Y.mean()
+# Calculate the mean value of a list of numbers
+def mean(values):
+    return sum(values) / float(len(values))
 
-ssr = d1.dot(d1)
-sst = d2.dot(d2)
-print("the sum of square(residual) is:", ssr)
+print('y mean: ', mean(Y)) #or np.mean(Y)
+
+
+ssr = np.sum((Y - Yhat)**2)
+sst = np.sum((Y - mean(Y))**2)
+
+print("\nthe sum of square(residual) is:", ssr)
 print("the the sum of square(total) is:", sst)
 
-r2 = 1 - ssr / sst
-print("the r-squared is:", r2)
 
+# determine how good the model is by computing the r-squared
+r2 = 1 - ssr / sst
+print("\nthe r-squared is:", r2)
 
