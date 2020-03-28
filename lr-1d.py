@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # load the data
 X = []
 Y = []
-for line in open('data_1d.csv'):
+for line in open('data-1d.csv'):
     x, y = line.split(',')
     X.append(float(x))
     Y.append(float(y))

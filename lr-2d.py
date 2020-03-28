@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 # load the data
 X = []
 Y = []
-for line in open('data_2d.csv'):
+for line in open('data-2d.csv'):
     x1, x2, y = line.split(',')
     X.append([float(x1), float(x2), 1]) # add the bias term
     Y.append(float(y))
@@ -51,12 +51,17 @@ def mean(values):
 
 print('y mean: ', mean(Y)) #or np.mean(Y)
 
-
-ssr = np.sum((Y - Yhat)**2)
+ssr = np.sum((Yhat - mean(Y))**2)
+sse = np.sum((Y - Yhat)**2)
 sst = np.sum((Y - mean(Y))**2)
 
-print("\nthe sum of square(residual) is:", ssr)
+sst2 = ssr + sse
+
+
+print("\nthe sum of square(model/regression) is:", ssr)
+print("\nthe sum of square(residual/error) is:", sse)
 print("the the sum of square(total) is:", sst)
+print("sst2: ", sst2)
 
 
 # determine how good the model is by computing the r-squared
