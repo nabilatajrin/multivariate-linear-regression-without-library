@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0ecf0f6-9d24-4c17-9484-fbf164a5cecd" name="Default Changelist" comment="" />
+    <list default="true" id="d0ecf0f6-9d24-4c17-9484-fbf164a5cecd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lr-1d.py" beforeDir="false" afterPath="$PROJECT_DIR$/lr-1d.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lr-2d.py" beforeDir="false" afterPath="$PROJECT_DIR$/lr-2d.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +20,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZhsCwSg78y8u2RMXiLRdYWPgjE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +32,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -30,28 +41,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.lr-1d (1)">
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="linear-regression-without-library" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.lr-2d">
     <configuration name="lr-1d (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="linear-regression-without-library" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -60,11 +50,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../linear-regression-without-library" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../linear-regression-without-library/lr-1d.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lr-1d.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -81,11 +71,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../linear-regression-without-library" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../linear-regression-without-library/lr-2d.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lr-2d.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,56 +147,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="linear-regression-without-library" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="linear-regression-without-library" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="linear-regression-without-library" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.lr-2d" />
         <item itemvalue="Python.lr-1d (1)" />
         <item itemvalue="Python.lr-2d (1)" />
         <item itemvalue="Python.numpy-dot" />
         <item itemvalue="Python.r2" />
-        <item itemvalue="Python.lr-2d" />
       </list>
     </recent_temporary>
   </component>
@@ -223,27 +170,42 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="311" y="58" width="800" height="677" key="#Inspections" timestamp="1585372345745">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="311" y="58" width="800" height="677" key="#Inspections/67.27.1299.741@67.27.1299.741" timestamp="1585372345745" />
     <state x="489" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585309723786">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="489" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1585309723786" />
-    <state width="1276" height="140" key="GridCell.Tab.0.bottom" timestamp="1585367140852">
+    <state width="1276" height="149" key="GridCell.Tab.0.bottom" timestamp="1585372805962">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="140" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1585367140852" />
-    <state width="1276" height="140" key="GridCell.Tab.0.center" timestamp="1585367140851">
+    <state width="1276" height="149" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1585372805962" />
+    <state width="1276" height="149" key="GridCell.Tab.0.center" timestamp="1585372805961">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="140" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1585367140851" />
-    <state width="1276" height="140" key="GridCell.Tab.0.left" timestamp="1585367140851">
+    <state width="1276" height="149" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1585372805961" />
+    <state width="1276" height="149" key="GridCell.Tab.0.left" timestamp="1585372805960">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="140" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1585367140851" />
-    <state width="1276" height="140" key="GridCell.Tab.0.right" timestamp="1585367140851">
+    <state width="1276" height="149" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1585372805960" />
+    <state width="1276" height="149" key="GridCell.Tab.0.right" timestamp="1585372805961">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="140" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1585367140851" />
+    <state width="1276" height="149" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1585372805961" />
     <state x="205" y="31" key="SettingsEditor" timestamp="1585309818454">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

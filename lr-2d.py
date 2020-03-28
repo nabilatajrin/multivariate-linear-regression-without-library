@@ -48,8 +48,13 @@ Yhat = np.dot(X, w)
 # determine how good the model is by computing the r-squared
 d1 = Y - Yhat
 d2 = Y - Y.mean()
-r2 = 1 - d1.dot(d1) / d2.dot(d2)
+
+ssr = d1.dot(d1)
+sst = d2.dot(d2)
+print("the sum of square(residual) is:", ssr)
+print("the the sum of square(total) is:", sst)
+
+r2 = 1 - ssr / sst
 print("the r-squared is:", r2)
 
-# x2 = 1 - (d1/d2)
-# print(x2)
+
