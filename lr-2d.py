@@ -22,12 +22,6 @@ ax.scatter(X[:,0], X[:,1], Y)
 plt.show()
 
 
-# apply the equations we learned to calculate a and b
-# numpy has a special method for solving Ax = b
-# so we don't use x = inv(A)*b
-# note: the * operator does element-by-element multiplication in numpy
-#       np.dot() does what we expect for matrix multiplication
-
 w = np.linalg.solve(np.dot(X.T, X), np.dot(X.T, Y))
 Yhat = np.dot(X, w)
 
