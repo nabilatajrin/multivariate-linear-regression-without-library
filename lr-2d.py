@@ -20,7 +20,7 @@ X = []
 Y = []
 for line in open('data-2d.csv'):
     x1, x2, y = line.split(',')
-    X.append([float(x1), float(x2), 1]) # add the bias term
+    X.append([float(x1), float(x2), 1])
     Y.append(float(y))
 
 # let's turn X and Y into numpy arrays since that will be useful later
@@ -28,7 +28,7 @@ X = np.array(X)
 Y = np.array(Y)
 
 
-# let's plot the data to see what it looks like
+# plot the data t
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(X[:,0], X[:,1], Y)
