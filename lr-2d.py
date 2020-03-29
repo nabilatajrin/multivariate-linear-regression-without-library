@@ -12,8 +12,8 @@ from builtins import range
 
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
-import matplotlib.pyplot as plt
-
+# import matplotlib.pyplot as plt
+import pylab as plt
 
 # load the data
 X = []
