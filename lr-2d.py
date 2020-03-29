@@ -1,18 +1,7 @@
-# shows how linear regression analysis can be applied to 2-dimensional data
-#
-# notes for this course can be found at:
-# https://deeplearningcourses.com/c/data-science-linear-regression-in-python
-# https://www.udemy.com/data-science-linear-regression-in-python
-
-# from __future__ import print_function, division
-from builtins import range
-# Note: you may need to update your version of future
-# sudo pip install -U future
 
 
 import numpy as np
-from mpl_toolkits.mplot3d import Axes3D
-# import matplotlib.pyplot as plt
+
 import pylab as plt
 
 # load the data
@@ -27,12 +16,6 @@ for line in open('data-2d.csv'):
 X = np.array(X)
 Y = np.array(Y)
 
-
-# plot the data t
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
-ax.scatter(X[:,0], X[:,1], Y)
-plt.show()
 
 
 # apply the equations we learned to calculate a and b
