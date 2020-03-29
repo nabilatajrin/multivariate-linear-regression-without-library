@@ -1,7 +1,5 @@
-
-
 import numpy as np
-
+from mpl_toolkits.mplot3d import Axes3D
 import pylab as plt
 
 # load the data
@@ -17,6 +15,12 @@ X = np.array(X)
 Y = np.array(Y)
 
 
+# let's plot the data
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter(X[:,0], X[:,1], Y)
+plt.show()
+
 
 # apply the equations we learned to calculate a and b
 # numpy has a special method for solving Ax = b
@@ -29,10 +33,11 @@ Yhat = np.dot(X, w)
 
 
 # Calculate the mean value of a list of numbers
+#or np.mean(Y)
 def mean(values):
     return sum(values) / float(len(values))
 
-print('y mean: ', mean(Y)) #or np.mean(Y)
+print('y mean: ', mean(Y))
 
 ssr = np.sum((Yhat - mean(Y))**2)
 sse = np.sum((Y - Yhat)**2)
@@ -50,4 +55,3 @@ print("sst2: ", sst2)
 # determine how good the model is by computing the r-squared
 r2 = 1 - ssr / sst
 print("\nthe r-squared is:", r2)
-
