@@ -1,6 +1,7 @@
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 import pylab as plt
+import seaborn as sns
 
 # load the data
 X = []
@@ -10,12 +11,12 @@ for line in open('data-2d.csv'):
     X.append([float(x1), float(x2), 1])
     Y.append(float(y))
 
-# let's turn X and Y into numpy arrays since that will be useful later
+# turn X and Y into numpy arrays
 X = np.array(X)
 Y = np.array(Y)
 
 
-# let's plot the data
+# plot the data
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(X[:,0], X[:,1], Y)
@@ -24,7 +25,6 @@ plt.show()
 
 w = np.linalg.solve(np.dot(X.T, X), np.dot(X.T, Y))
 Yhat = np.dot(X, w)
-
 
 # Calculate the mean value of a list of numbers
 #or np.mean(Y)
