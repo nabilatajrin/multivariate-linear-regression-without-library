@@ -1,7 +1,6 @@
 # linear-regression-without-library
 
-This is a project without scikit-learn
-
+This is a MULTIVARIATE LINEAR REGRESSION project without scikit-learn.
 
 
 -Regression is a method of modelling a target value based on independent predictors. 
@@ -14,7 +13,7 @@ and dependent variables.
 independent variables is one and there is a linear relationship between the 
 independent(x) and dependent(y) variable.
 
-Y = a + bX1 + cX2 + dX3 + ϵ
+FORMULA: Y = a + bX1 + cX2 + dX3 + ϵ
  
 Where:
 Y – Dependent variable
@@ -24,10 +23,10 @@ b, c, d – Slopes
 ϵ – Residual (error)
 
 
+STEPS:
 
-
-load the data, X, Y
-turn X and Y into numpy arrays
+-load the data, X, Y
+-turn X and Y into numpy arrays
 
 
 Y – the observed value
@@ -46,21 +45,21 @@ FORMULA:
 b = (X^T . X)^-1 . X^T . y
 yhat = X.dot(b)
 
-ȳ – the mean value of a sample
+FORMULA: ȳ – the mean value of a sample
 
 MODEL
 the sum of square(due to regression):
 
-SSr = np.sum((Yhat - Ymean)**2)
+FORMULA: SSr = np.sum((Yhat - Ymean)**2)
 
 RESIDUAL
 the sum of square(due to error):
-SSe = np.sum((Y - Yhat)**2)
+FORMULA: SSe = np.sum((Y - Yhat)**2)
 
 TOTAL
 the the sum of square(total):
 
-SSt = np.sum((Y - Ymean)**2)
+FORMULA: SSt = np.sum((Y - Ymean)**2)
 
 R2
 -determine how good the model is by computing the r-squared
@@ -72,9 +71,8 @@ R2
 FORMULA: R2 =SSR/SST = 1 − SSE/SST
 
 number of obs, n
-n = Y.size
+FORMULA: n = Y.size
 
-p
 - everytime we include a new variable the r2 is increased, we keep adding
 and the r2 keeps increasing, this is greatsince the model will get better.
 but when we look at the adj r2 if wesee the value of adj r2 decreases when 
@@ -101,17 +99,17 @@ power.
 0 ≤ R2 ≤ 1
 -Large R2 values do not necessarily imply a good model
 
-adjr2 = 1 - (1 - r2) * ((n - 1) / (n - p - 1))
+FORMULA: adjr2 = 1 - (1 - r2) * ((n - 1) / (n - p - 1))
 
 
 DEGREES OF FREEDOM (MODEL/ REGRESSION)
 Regression df is the number of independent variables in our regression model.
 
-DFr = p
+FORMULA: DFr = p
 
 
 DEGREES OF FREEDOM (RESIDUAL/ ERROR)
-DFe = n - p - 1
+FORMULA: DFe = n - p - 1
 
 
 DEGREES OF FREEDOM (TOTAL)
@@ -130,11 +128,11 @@ related to each other.
 
 FORMULA: dfT = dfR + dfE
 
-DFt = n - 1
+or, DFt = n - 1
 
 
 Mean Absolute Error, or L1 loss, MAE:
-mae = np.sum(np.absolute(Yhat - Y))
+FORMULA: mae = np.sum(np.absolute(Yhat - Y))
 
 Regression Mean Square, MSr
 FORMULA: Regression MS = ∑ (ŷ — ӯ)²/Reg. df
@@ -142,21 +140,21 @@ MSr = np.sum(((Yhat - Ymean)**2)/DFr)
 
 Residual Mean Square, MSe
 FORMULA: Residual MS = ∑ (y — ŷ)²/Res. df
-MSe = np.sum(((Y - Yhat)**2)/DFr)
+	 MSe = np.sum(((Y - Yhat)**2)/DFr)
 
 
 Total Mean Square
-MSt = MSr + MSe
+FORMULA: MSt = MSr + MSe
 
 MSE — Mean Squared Error for cost function
 Mean Squared Errors (MS) — are the mean of the sum of squares or the sum of squares 
 divided by the degrees of freedom for both, regression and residuals.
-mse = np.sum((Yhat - Y)**2) / n
+FORMULA: mse = np.sum((Yhat - Y)**2) / n
 
 
 F — is used to test the hypothesis that the slope of the independent variable is zero. 
 Mathematically, it can also be calculated as
-F = MSr / MSe
+FORMULA: F = MSr / MSe
 
 
 STANDERD ERROR — provides the estimated standard deviation of the distribution of 
