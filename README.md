@@ -1,6 +1,6 @@
 # linear-regression-without-library
 
-This is a MULTIVARIATE LINEAR REGRESSION project without scikit-learn.
+This is a multivariate linear regression project without scikit-learn.
 
 
 -Regression is a method of modelling a target value based on independent predictors. 
