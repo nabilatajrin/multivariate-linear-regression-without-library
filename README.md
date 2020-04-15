@@ -15,7 +15,7 @@ independent(x) and dependent(y) variable.
 
 FORMULA: Y = a + bX1 + cX2 + dX3 + ϵ
  
-Where:
+Where,
 Y – Dependent variable
 X1, X2, X3 – Independent (explanatory) variables
 a – Intercept
